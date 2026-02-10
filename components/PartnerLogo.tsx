@@ -11,17 +11,22 @@ interface Partner {
 const PartnerLogo: React.FC<{ partner: Partner }> = ({ partner }) => {
     if (partner.type === 'image' && partner.url) {
         return (
-            <img
-                src={partner.url}
-                alt={`Logo ${partner.name}`}
-                className="h-12 w-auto object-contain brightness-0 invert opacity-70 hover:opacity-100 transition-all duration-300"
-            />
+            <div className="bg-white rounded-xl px-6 py-4 shadow-sm hover:shadow-md hover:scale-105 transition-all duration-300">
+                <img
+                    src={partner.url}
+                    alt={`Logo ${partner.name}`}
+                    className="h-10 md:h-12 w-auto object-contain max-w-[160px]"
+                    loading="lazy"
+                />
+            </div>
         );
     }
 
     return (
-        <div className={`text-white text-xl opacity-70 hover:opacity-100 transition-opacity whitespace-nowrap ${partner.style || ''}`}>
-            {partner.name}
+        <div className={`bg-white rounded-xl px-6 py-4 shadow-sm hover:shadow-md hover:scale-105 transition-all duration-300`}>
+            <span className={`text-slate-800 text-lg font-bold whitespace-nowrap ${partner.style || ''}`}>
+                {partner.name}
+            </span>
         </div>
     );
 };

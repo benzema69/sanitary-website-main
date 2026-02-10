@@ -145,7 +145,7 @@ export const PARTNERS = [
   {
     name: "KWC",
     type: "image",
-    url: "https://upload.wikimedia.org/wikipedia/commons/8/82/KWC_logo.svg"
+    url: "/logos/kwc.png"
   },
   {
     name: "Getaz-Miauton",
