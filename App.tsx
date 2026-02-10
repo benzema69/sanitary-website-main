@@ -10,6 +10,7 @@ import AIChat, { AIChatHandle } from './components/AIChat';
 import ServicePage from './components/ServicePage';
 import { SERVICE_DETAILS } from './data/serviceDetails';
 import { PHONE_DISPLAY, PHONE_HREF, EMAIL, NAV_LINKS, FAQ_ITEMS, TESTIMONIALS } from './data';
+import { submitProjectForm } from './services/formService';
 
 // Component Imports
 import LegalModal from './components/LegalModal';
@@ -135,13 +136,18 @@ const App: React.FC = () => {
     setMobileMenuOpen(false);
   };
 
-  const handleFormSubmit = (e: React.FormEvent) => {
+  const handleFormSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
     setIsFormSubmitting(true);
-    setTimeout(() => {
-      setIsFormSubmitting(false);
+
+    const success = await submitProjectForm(formData);
+
+    setIsFormSubmitting(false);
+    if (success) {
       setFormSuccess(true);
-    }, 1500);
+    } else {
+      alert("Une erreur est survenue lors de l'envoi. Veuillez nous contacter par téléphone.");
+    }
   };
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {

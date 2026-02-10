@@ -127,30 +127,30 @@ export const FAQ_ITEMS = [
 ];
 
 export const PARTNERS = [
-  { 
-    name: "Sanitas Troesch", 
-    type: "text", 
-    style: "font-bold tracking-tight italic" 
+  {
+    name: "Sanitas Troesch",
+    type: "image",
+    url: "/logos/sanitas-troesch.png"
   },
-  { 
-    name: "Geberit", 
-    type: "image", 
-    url: "https://upload.wikimedia.org/wikipedia/commons/1/15/Geberit_Logo.svg" 
+  {
+    name: "Geberit",
+    type: "image",
+    url: "/logos/geberit.png"
   },
-  { 
-    name: "Laufen", 
-    type: "image", 
-    url: "https://upload.wikimedia.org/wikipedia/commons/2/25/Laufen_Bathrooms_Logo.svg" 
+  {
+    name: "Laufen",
+    type: "image",
+    url: "/logos/laufen.png"
   },
-  { 
-    name: "KWC", 
-    type: "image", 
-    url: "https://upload.wikimedia.org/wikipedia/commons/8/82/KWC_logo.svg" 
+  {
+    name: "KWC",
+    type: "image",
+    url: "https://upload.wikimedia.org/wikipedia/commons/8/82/KWC_logo.svg"
   },
-  { 
-    name: "Getaz-Miauton", 
-    type: "text", 
-    style: "font-black uppercase tracking-widest" 
+  {
+    name: "Getaz-Miauton",
+    type: "image",
+    url: "/logos/getaz-miauton.png"
   },
   {
     name: "Villeroy & Boch",
@@ -186,25 +186,25 @@ export const TESTIMONIALS = [
 
 export const LOCATIONS = {
   center: ["Rolle", "Mont-sur-Rolle", "Perroy", "Gilly", "Tartegnin", "Essertines-sur-Rolle", "Bursinel", "Dully", "Bursins", "Vinzel", "Luins"],
-  east: ["Begnins", "Vich", "Coinsins", "Duillier", "Gland", "Prangins", "Nyon", "Eysins", "Signy-Avenex", "Gren", "Trélex", "Gingins", "Genolier", "Crans-près-Céligny"], 
-  west: ["Allaman", "Féchy", "Bougy-Villars", "Aubonne", "Lavigny", "Etoy", "Buchillon", "Saint-Prex", "Lussy-sur-Morges", "Villars-sous-Yens", "Denens", "Yens", "Morges", "Vufflens-le-Château"], 
+  east: ["Begnins", "Vich", "Coinsins", "Duillier", "Gland", "Prangins", "Nyon", "Eysins", "Signy-Avenex", "Gren", "Trélex", "Gingins", "Genolier", "Crans-près-Céligny"],
+  west: ["Allaman", "Féchy", "Bougy-Villars", "Aubonne", "Lavigny", "Etoy", "Buchillon", "Saint-Prex", "Lussy-sur-Morges", "Villars-sous-Yens", "Denens", "Yens", "Morges", "Vufflens-le-Château"],
   north: ["Burtigny", "Le Vaud", "Marchissy", "Longirod", "Saint-George", "Gimel", "Saint-Oyens", "Saubraz", "Biere", "Berolle", "Mollens", "Ballens", "Apples", "Bussy-Chardonney", "Reverolle", "Clarmont", "Arzier-Le Muids", "Bassins"]
 };
 
 export const PROJECTS = [
   {
     title: 'Rénovation Complète',
-    img: 'https://images.unsplash.com/photo-1620626011761-996317b8d101?q=80&w=600&auto=format&fit=crop', 
+    img: 'https://images.unsplash.com/photo-1620626011761-996317b8d101?q=80&w=600&auto=format&fit=crop',
     tag: 'Rénovation'
   },
   {
     title: 'Installation Technique',
-    img: 'https://images.unsplash.com/photo-1585704032915-c3400ca199e7?q=80&w=600&auto=format&fit=crop', 
+    img: 'https://images.unsplash.com/photo-1585704032915-c3400ca199e7?q=80&w=600&auto=format&fit=crop',
     tag: 'Installation'
   },
   {
     title: 'Robinetterie KWC',
-    img: 'https://images.unsplash.com/photo-1594498653385-d5172c532c00?q=80&w=600&auto=format&fit=crop', 
+    img: 'https://images.unsplash.com/photo-1594498653385-d5172c532c00?q=80&w=600&auto=format&fit=crop',
     tag: 'Sanitaire'
   }
 ];
