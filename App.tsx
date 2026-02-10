@@ -16,7 +16,7 @@ import { submitProjectForm } from './services/formService';
 import LegalModal from './components/LegalModal';
 import Hero from './components/sections/Hero';
 import ServicesSection from './components/sections/Services';
-import Partners from './components/sections/Partners';
+
 import About from './components/sections/About';
 import Locations from './components/sections/Locations';
 import Projects from './components/sections/Projects';
@@ -288,7 +288,7 @@ const App: React.FC = () => {
             areServicesLoading={areServicesLoading}
             setSelectedServiceId={setSelectedServiceId}
           />
-          <Partners />
+
           <About />
           <Locations />
           <Projects
